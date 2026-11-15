@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis</title>
+<meta name="description" content="Jarvis is a personal AI assistant Adam Weir built for his own use.">
+<style>
+:root {
+  --bg: #f7f7f5;
+  --text: #1d1d1b;
+  --muted: #5c5c57;
+  --line: #deded8;
+  --link: #0b5cad;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141517;
+    --text: #e8e8e4;
+    --muted: #a3a39c;
+    --line: #2c2e31;
+    --link: #7ab8f5;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+nav { display: flex; gap: 20px; font-size: 15px; margin-bottom: 40px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 19px; margin: 36px 0 8px; }
+p, li { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+a { color: var(--link); }
+.lede { font-size: 19px; color: var(--muted); margin-bottom: 28px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <a href="index.html" aria-current="page">Jarvis</a>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="terms.html">Terms of service</a>
+</nav>
+
+<h1>Jarvis</h1>
+<p class="lede">A personal AI assistant that Adam Weir built for himself.</p>
+
+<p>Jarvis runs on Adam's own computer. It isn't a product, it isn't offered to anyone else, and
+there are no accounts to sign up for. Adam is its only user.</p>
+
+<h2>What it does with Google</h2>
+<p>With Adam's sign-in, Jarvis reads his Google Calendar and Gmail to answer his questions: what's
+on this week, what an email said, when he's free. It can also prepare a calendar event, a reminder,
+an email, or an inbox action like archiving. None of those happen until Adam reviews them and clicks
+to approve.</p>
+
+<p>How Jarvis handles that data is in the <a href="privacy.html">privacy policy</a>. The rules for
+using it are in the <a href="terms.html">terms of service</a>.</p>
+
+<footer>Last updated November 15, 2026.</footer>
+</main>
+</body>
+</html>
