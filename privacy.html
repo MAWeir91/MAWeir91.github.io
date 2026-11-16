@@ -68,6 +68,9 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
   <li><strong>Gmail filters:</strong> a rule Adam has approved many times in a row can become a Gmail
     filter, only after he approves that filter. Its filters only archive or label a sender's mail; they
     never delete, forward, or change other settings. He can remove any filter in Gmail or in Jarvis.</li>
+  <li><strong>Job search tracker:</strong> to suggest updates to Adam's job search tracker, it looks for
+    emails that read like job applications or replies, and reads only their sender and subject line, never
+    their text. A suggestion goes into the tracker only after Adam ticks it.</li>
 </ul>
 
 <h2>How it's used</h2>
@@ -79,9 +82,11 @@ sold, never used for advertising, and never used to train an AI model.</p>
   <li><strong>It isn't stored.</strong> Jarvis looks things up live when Adam asks and doesn't keep
     copies of his email or calendar. In any answer that read email or calendar text, Jarvis refuses
     to save anything to its memory. Its approval log records only the kind of action and its outcome
-    (for example, "calendar create, approved"), never titles, addresses, or message text. The one
-    exception is its list of inbox rules: the names and addresses of mailing-list senders and what to do
-    with their mail, kept on Adam's computer. No personal contact is ever on it.</li>
+    (for example, "calendar create, approved"), never titles, addresses, or message text. Two
+    exceptions, both kept on Adam's computer: its list of inbox rules (the names and addresses of
+    mailing-list senders and what to do with their mail; no personal contact is ever on it), and his job
+    search tracker (company names, roles, dates, and pointers to the emails in Gmail; never an email's
+    text or anyone's contact details).</li>
   <li><strong>To write an answer,</strong> the relevant text is sent over an encrypted connection to
     Anthropic's Claude API, the AI model that writes Jarvis's replies. To suggest labels, Jarvis sends
     it only senders' names and addresses, Gmail's category, and how many emails came and were opened,
@@ -106,7 +111,7 @@ Data Policy</a>, including the Limited Use requirements.</p>
 <p>If how Jarvis handles data changes, this page changes first. Questions go to the support email
 shown on Jarvis's Google sign-in screen.</p>
 
-<footer>Last updated November 15, 2026 (inbox rules, label suggestions, and Gmail filters added).</footer>
+<footer>Last updated November 16, 2026 (job search tracker added).</footer>
 </main>
 </body>
 </html>
